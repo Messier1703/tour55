@@ -1,6 +1,6 @@
 import { Button, ConfigProvider } from "antd"
 import { ReactNode } from "react"
-import theme from "@/theme/themeConfig"
+import { baseTheme } from "@/theme/themeConfig"
 import styles from "./PrimaryButton.module.scss"
 
 interface PrimaryButtonProps {
@@ -10,7 +10,7 @@ interface PrimaryButtonProps {
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({ children, type }) => {
   return (
-    <ConfigProvider theme={theme}>
+    <ConfigProvider theme={baseTheme}>
       <Button type={type} className={styles.button}>
         {children}
       </Button>

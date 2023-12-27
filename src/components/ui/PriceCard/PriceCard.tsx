@@ -1,9 +1,9 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import styles from "./PriceCard.module.scss"
 
 interface PriceCardProps {
   title: string
-  src: string
+  src: StaticImageData
 }
 
 const PriceCard: React.FC<PriceCardProps> = ({ title, src }) => {
