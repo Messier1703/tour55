@@ -1,0 +1,32 @@
+.hero {
+  padding: 230px 0 350px;
+
+  h1 {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--title-color);
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 45px;
+
+    span {
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.price {
+  &_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: fit-content;
+    margin: 0 auto;
+    grid-gap: 20px;
+  }
+}

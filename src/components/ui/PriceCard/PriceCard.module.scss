@@ -1,0 +1,15 @@
+.card {
+  background-color: #f4f6fa;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+  width: 340px;
+
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
