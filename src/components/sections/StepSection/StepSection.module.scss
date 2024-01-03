@@ -1,0 +1,9 @@
+.steps {
+  &_grid {
+    width: min-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 340px;
+    grid-gap: 30px;
+  }
+}

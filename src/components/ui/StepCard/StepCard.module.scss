@@ -1,0 +1,30 @@
+.card {
+  width: 340px;
+
+  figure {
+    width: 340px;
+    height: 230px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  div {
+    padding: 0 10px;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
