@@ -5,7 +5,9 @@ import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton"
 const HeroSection = () => {
   return (
     <main className={styles.hero}>
-      <figure className={styles.hero_bg}>{/* <video src={require("/public/videos/hero-bg.mp4")} autoPlay muted loop /> */}</figure>
+      <figure className={styles.hero_bg}>
+        {/* <video src={require("/public/videos/hero-bg.mp4")} autoPlay muted loop /> */}
+      </figure>
       <div className="container">
         <h1>Раннее бронирование туров в Турцию из Омска</h1>
         <p>

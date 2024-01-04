@@ -1,6 +1,6 @@
-import StepCard from "@/components/ui/StepCard/StepCard"
 import styles from "./StepSection.module.scss"
 import photo from "/public/images/resort-photo.webp"
+import ImageCard from "@/components/ui/ImageCard/ImageCard"
 
 const StepSection = () => {
   return (
@@ -10,17 +10,17 @@ const StepSection = () => {
           Легкий путь к <span>идеальному отдыху:</span>
         </h2>
         <div className={styles.steps_grid}>
-          <StepCard
+          <ImageCard
             title="Пройдите тест"
             description="Ответьте на несколько простых вопросов и выберите удобный способ для получения подборки."
             src={photo}
           />
-          <StepCard
+          <ImageCard
             title="Пройдите тест"
             description="Ответьте на несколько простых вопросов и выберите удобный способ для получения подборки."
             src={photo}
           />
-          <StepCard
+          <ImageCard
             title="Пройдите тест"
             description="Ответьте на несколько простых вопросов и выберите удобный способ для получения подборки."
             src={photo}
