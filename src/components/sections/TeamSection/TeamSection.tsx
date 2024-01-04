@@ -1,4 +1,3 @@
-import styles from "./TeamSection.module.scss"
 import personPhoto from "/public/images/person-photo.webp"
 import ImageCard from "@/components/ui/ImageCard/ImageCard"
 
@@ -9,7 +8,7 @@ const TeamSection = () => {
         <h2 className="section_title">
           <span>Наши эксперты,</span> которые помогут организовать путешествие
         </h2>
-        <div className={styles.team_grid}>
+        <div className="card_grid">
           <ImageCard
             src={personPhoto}
             title="Елена"

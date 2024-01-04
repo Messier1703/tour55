@@ -1,6 +1,8 @@
 .hero {
-  padding: 150px 0;
+  padding: 150px 0 100px;
   position: relative;
+  height: 90vh;
+  min-height: 690px;
 
   &_bg {
     position: absolute;
@@ -36,6 +38,20 @@
     span {
       font-weight: 500;
       color: var(--primary-color);
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .hero {
+    h1 {
+      font-size: 70px;
+      line-height: 75px;
+    }
+
+    p {
+      font-size: 30px;
+      margin-bottom: 70px;
     }
   }
 }

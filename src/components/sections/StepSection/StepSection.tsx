@@ -1,10 +1,10 @@
-import styles from "./StepSection.module.scss"
 import photo from "/public/images/resort-photo.webp"
 import ImageCard from "@/components/ui/ImageCard/ImageCard"
+import styles from "./StepSection.module.scss"
 
 const StepSection = () => {
   return (
-    <section className={styles.steps}>
+    <section>
       <div className="container">
         <h2 className="section_title">
           Легкий путь к <span>идеальному отдыху:</span>

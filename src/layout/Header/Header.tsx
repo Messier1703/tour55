@@ -41,16 +41,39 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 840)
+    }
+
+    handleResize()
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
   return (
     <header className={headerClass}>
       <div className="container">
-        <BurgerMenu isOpen={isMenuOpen} onClose={toggleMenu} id={styles.mobile_only} />
         <div className={styles.header_wrapper}>
           <Link href="/">
             <figure className={styles.header_logo}>
               <Image src={logo} alt="Логотип" />
             </figure>
           </Link>
+          {!!isDesktop && (
+            <div className={styles.header_links}>
+              <Link href="#">Бронь</Link>
+              <Link href="#">Получить подборку</Link>
+              <Link href="#">Наши эксперты</Link>
+              <Link href="#">Отзывы</Link>
+            </div>
+          )}
           <div className={styles.header_social}>
             <Link href="/">
               <SocialButton theme={instagramIconTheme} src={instagramLogo} alt="Инстаграм" />
@@ -62,7 +85,12 @@ const Header = () => {
               <SocialButton theme={whatsappIconTheme} src={whatsappLogo} alt="Инстаграм" />
             </Link>
           </div>
-          <BurgerButton onClick={toggleMenu} />
+          {!isDesktop && (
+            <>
+              <BurgerButton onClick={toggleMenu} />
+              <BurgerMenu isOpen={isMenuOpen} onClose={toggleMenu} id={styles.mobile_only} />
+            </>
+          )}
         </div>
       </div>
     </header>

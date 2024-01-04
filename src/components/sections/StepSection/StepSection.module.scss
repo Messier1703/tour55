@@ -1,9 +1,17 @@
 .steps {
   &_grid {
-    width: min-content;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 340px;
-    grid-gap: 30px;
+    margin: 0 auto;
+    width: min-content;
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .steps {
+    &_grid {
+      grid-template-columns: repeat(3, 340px);
+    }
   }
 }

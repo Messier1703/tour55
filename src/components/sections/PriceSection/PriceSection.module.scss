@@ -7,10 +7,12 @@
     gap: 50px;
   }
 
-  &_cards {
+  &_perks {
     display: grid;
-    grid-template-columns: min-content;
-    gap: 20px;
+    grid-template-columns: 340px;
+    grid-gap: 20px;
+    width: min-content;
+    margin: 0 auto;
   }
 
   &_rating {
@@ -52,7 +54,7 @@
 
 @media (min-width: 730px) {
   .price {
-    &_cards {
+    &_perks {
       grid-template-columns: repeat(2, min-content);
     }
   }
@@ -60,7 +62,7 @@
 
 @media (min-width: 1450px) {
   .price {
-    &_cards {
+    &_perks {
       grid-template-columns: repeat(4, min-content);
     }
   }

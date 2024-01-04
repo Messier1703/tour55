@@ -16,16 +16,16 @@ const PriceSection = () => {
         <h2 className="section_title">
           Раннее бронирование <span>с выгодными условиями оплаты</span>
         </h2>
-        <h3 className="subtitle">В стоимость включены</h3>
-        <p className="description">Цена на 1 человека при двухместном размещении</p>
+        <h3 className="subtitle">В стоимость включены:</h3>
+        <p className="description">(Цена на 1 человека при двухместном размещении)</p>
         <div className={styles.price_wrapper}>
-          <div className={styles.price_cards}>
+          <div className={styles.price_perks}>
             <PriceCard title="Авиаперелет" src={planeIcon} />
             <PriceCard title="Групповой трансфер" src={busIcon} />
             <PriceCard title="Медицинская страховка" src={medicalIcon} />
             <PriceCard title="Проживание в отеле" src={hotelIcon} />
           </div>
-          <div className={styles.price_cards}>
+          <div className="card_grid">
             <CatalogCard src={heroBg} title="Кемер на 7 ночей">
               <div className={styles.price_rating}>
                 <div>

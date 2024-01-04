@@ -71,7 +71,8 @@ section {
   font-size: 35px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 30px;
+  text-align: center;
+  margin: 0 auto 30px;
 
   span {
     font-weight: 500;
@@ -79,15 +80,64 @@ section {
 }
 
 .subtitle {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 500;
-  margin-bottom: 5px;
+  text-align: center;
+  margin: 0 auto 5px;
   line-height: 30px;
 }
 
 .description {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 10px;
   line-height: 30px;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: 340px;
+  grid-gap: 20px;
+  width: min-content;
+  margin: 0 auto;
+}
+
+@media (min-width: 730px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+@media (min-width: 1090px) {
+  .card_grid {
+    grid-template-columns: repeat(3, 340px);
+  }
+}
+
+@media (min-width: 1450px) {
+  .section_title {
+    font-size: 50px;
+    text-align: left;
+    margin: 0 0 75px;
+    line-height: 55px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 0 15px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 33px;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(4, 340px);
+  }
 }
